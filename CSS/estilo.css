@@ -12,7 +12,7 @@ html{
 /* MENU */
 
 .contenedor-header{
-    background: #141516;
+    background: #212325;
     position: fixed;
     width: 100%;
     top: 0;
@@ -59,7 +59,7 @@ html{
 
 /* SECCION INICIO */
 .inicio{
-    background: rgba(19, 21, 22, 0.8);
+    background: rgba(19, 31, 37, 0.8);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -68,18 +68,19 @@ html{
 }
 .inicio .contenido-banner{
     padding: 20px;
-    background-color: #090a0a;
+    background-color: #212325;
     max-width: 350px;
     margin: auto;
     text-align: center;
+    border: solid 1px #e7890d;
+
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid #e7890d;
+    border: 2px solid #e7890d;
     display: block;
     width: 80%;
     margin: auto;
-    border-radius: 100%;
 }
 .inicio .contenido-banner h1{
     margin-top: 40px;
@@ -95,7 +96,6 @@ html{
     display: inline-block;
     text-decoration: none;
     border: 1px solid #fff;
-    border-radius: 100%;
     width: 42px;
     height: 42px;
     line-height: 42px;
@@ -137,79 +137,13 @@ html{
 .sobremi .fila{
     display: flex;
 }
-.sobremi .fila .col
-{
+.sobremi .fila .col{
     width: 50%;
 }
 .sobremi .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
-}
-.sobremi .fila .col ul{
-    list-style: none;
-}
-.sobremi .fila .col ul li{
-    margin: 12px 0;
-}
-.sobremi .fila .col ul li strong{
-    display: inline-block;
-    color: #e7890d;
-    width: 130px;
-}
-.sobremi .fila .col ul li span{
-    background-color: #e7890d;
-    padding: 3px;
-    font-weight: bold;
-    border-radius: 5px;
-}
-.sobremi .fila .col .contenedor-intereses{
-    display: flex;
-    flex-wrap: wrap;
-}
-.sobremi .fila .col .contenedor-intereses .interes{
-    width: 100px;
-    height: 100px;
-    background-color: #252A2E;
-    border-radius: 10px;
-    margin: 0 15px 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #e7890d;
-}
-.sobremi .fila .col .contenedor-intereses .interes i{
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-.sobremi button{
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    z-index: 10;
-}
-.sobremi button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #e7890d;
-    z-index: -1;
-    transition: 1s;
-}
-.sobremi button:hover .overlay{
-    width: 100%;
 }
 
 /* SECCION CURRICULUM */
@@ -316,31 +250,27 @@ html{
     margin-right: 20px;
 }
 
-/*FOOTER*/
+/*PIE DE PAGINIA*/
 
 footer{
-    background-color: #252A2E;
+    background-color: #212325;
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
     position: relative;
-    width: 100%;
 }
 footer .redes{
     margin-bottom: 10px;
 }
 footer .redes a{
-    color: #0c0c0c;
+    color: #ffffff;
     display: inline-block;
-    text-decoration: none;
-    border: 1px solid #080808;
-    border-radius: 100%;
     width: 42px;
     height: 42px;
     line-height: 42px;
     margin: 40px 5px;
     font-size: 20px;
-    transition: .3s;
+    transition: 1s;
 }
 footer .arriba{
     display: block;
@@ -356,3 +286,28 @@ footer .arriba{
     font-size: 18px;
 }
 
+/* RESPONSIVE */
+
+@media screen and (max-width:980px){
+    nav{
+        display:flex;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fcfcfc;
+        padding: 10px 0;
+    }
+}
