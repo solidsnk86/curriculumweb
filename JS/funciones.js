@@ -1,3 +1,14 @@
+//* OSCURO/CLARO *//
+
+const btnSwitch = document.querySelector('#switch');
+
+btnSwitch.addEventListener('click', () => {
+    document.body.classList.toogle('light');
+    btnSwitch.classList.toggle('active');
+})
+
+
+
 const ids=['fullname','picture','phone','email','address',];
 
 const api={
@@ -56,6 +67,8 @@ const populate_cv=function(data){
         }
     }
 }
+
+//* SECCION RANDOM CLICK *//
 
 const recarga=function() {
     fetch(api.url,{mode:'cors'})

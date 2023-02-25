@@ -9,6 +9,50 @@ html{
     scroll-behavior: smooth;
 }
 
+/*---SWITCH---*/
+
+.switch{
+    background-color: #40434d;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+
+.switch span{
+    width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: #fff;
+        
+}
+
+.switch span ::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #f1f1f1;
+        top: 0;
+        left: 0;
+        right: unset;
+        transition: .3s ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+}
+
+button.active{
+    background:#e7890d;
+    color: #000;
+}
+button.active ::after{
+    right: 0;
+    left: unset;
+}
+
 /* MENU */
 
 .contenedor-header{
@@ -102,10 +146,12 @@ html{
     margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
+    cursor: pointer;
 }
 .inicio .contenido-banner .redes a:hover{
     background-color: #e7890d;
 }
+
 
 /*ACERCA DE MI*/
 
