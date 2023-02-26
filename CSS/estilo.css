@@ -10,48 +10,66 @@ html{
 }
 
 /*---SWITCH---*/
+body.dark {   
+    background:  #1b1b1b; 
+}
+body.dark h2 {   
+    color:#fff
+}
 
-.switch{
-    background-color: #40434d;
-    border: none;
+.darkModeSwitch{
+    background: #22272b;
+    display:flex;
     position: relative;
     cursor: pointer;
-    display: flex;
     outline: none;
+    border: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.darkModeSwitch span{
+    width:30px;
+    height:15px;
+    line-height:30px;
+    display:block;
+    color:#fda500;
+
+    background: none;
+}
+.darkModeSwitch::after{
+    display:block;
+    background: #f8f8f8;
+    width: 1.9rem;
+    height: 1.9rem;
+    position: absolute;
+    top:0;
+    left:0;
+    right:unset;
+    transition: all .5s ease;
+
+    content: "";
+}
+.darkModeSwitch.active{
+  background: #22272b;
+}
+.darkModeSwitch.active::after{
+  left:unset;
+  right:0;
+}
+/* BODY COLOR */
+body {
+    --color-text: #EE6352;
 }
 
-.switch span{
-    width: 30px;
-        height: 30px;
-        line-height: 30px;
-        display: block;
-        background: none;
-        color: #fff;
-        
+body {
+    background-color: var(--color-bg);
 }
 
-.switch span ::after{
-        content: "";
-        display: block;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        background: #f1f1f1;
-        top: 0;
-        left: 0;
-        right: unset;
-        transition: .3s ease all;
-        box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+h1 {
+    color: var(--color-text);
 }
 
-button.active{
-    background:#e7890d;
-    color: #000;
-}
-button.active ::after{
-    right: 0;
-    left: unset;
-}
+
 
 /* MENU */
 
@@ -74,7 +92,7 @@ button.active ::after{
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #e7890d;
+    color: #EE6352;
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -90,10 +108,10 @@ button.active ::after{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: #e7890d;
+    color: #EE6352;
 }
 .nav-responsive{
-    background-color: #e7890d;
+    background-color: #EE6352;
     color:#fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -103,7 +121,6 @@ button.active ::after{
 
 /* SECCION INICIO */
 .inicio{
-    background: rgba(19, 31, 37, 0.8);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -116,12 +133,12 @@ button.active ::after{
     max-width: 350px;
     margin: auto;
     text-align: center;
-    border: solid 1px #e7890d;
+    border: solid 1px #EE6352;
 
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 2px solid #e7890d;
+    border: 2px solid #EE6352;
     display: block;
     width: 80%;
     margin: auto;
@@ -149,15 +166,14 @@ button.active ::after{
     cursor: pointer;
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: #e7890d;
+    background-color: #EE6352;
 }
 
 
 /*ACERCA DE MI*/
 
 .sobremi{
-    background-color: #000000;
-    color: #fff;
+    color: #050505;
     padding: 50px 20px;
 }
 .sobremi .contenido-seccion{
@@ -177,7 +193,7 @@ button.active ::after{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-    color: #e7890d;
+    color: #EE6352;
     font-weight: bold;
 }
 .sobremi .fila{
@@ -195,8 +211,7 @@ button.active ::after{
 /* SECCION CURRICULUM */
 
 .curriculum{
-    background-color: #050505;
-    color: #fff;
+    color: #000000;
     padding: 50px 20px;
 }
 .curriculum .contenido-seccion{
@@ -213,8 +228,7 @@ button.active ::after{
 /*CONTACTO*/
 
 .contacto{
-    background-color: #121314;
-    color: #fff;
+    color: #000000;
     padding: 50px 0;
 }
 .contacto .contenido-seccion{
@@ -222,6 +236,7 @@ button.active ::after{
     margin: auto;
 }
 .contacto h2{
+    color: #000000;
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
@@ -235,25 +250,24 @@ button.active ::after{
     
 }
 .contacto .col input, .contacto .col textarea{
+    background-color: #212325;
     display: block;
     width: 100%;
     padding: 18px;
     border: none;
     margin-bottom: 20px;
-    background-color: #252A2E;
-    color: #fff;
+    color: #f3f3f3;
     font-size: 18px;
 }
 .contacto button{
     cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid #0a0a0a;
     width: fit-content;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
+    color: #000000;
     position: relative;
     z-index: 10;
 }
@@ -263,7 +277,7 @@ button.active ::after{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #e78f0a;
+    background-color: #EE6352;
     z-index: -1;
     transition: 1s;
 }
@@ -276,7 +290,6 @@ button.active ::after{
 .contacto .col .info{
     position: absolute;
     top: 40%;
-    background-color: #252A2E;
     padding: 20px;
     max-width: 350px;
     left: 50%;
@@ -291,7 +304,7 @@ button.active ::after{
     justify-content: center;
 }
 .contacto .col .info ul li i{
-    color: #e78f0a;
+    color: #EE6352;
     display: inline-block;
     margin-right: 20px;
 }
@@ -332,6 +345,17 @@ footer .arriba{
     font-size: 18px;
 }
 
+#fa {
+    color: rgb(40, 40, 216);
+}
+
+#yt {
+    color: red;
+}
+
+#in {
+    color: rgb(136, 34, 119);
+}
 /* RESPONSIVE */
 
 @media screen and (max-width:980px){

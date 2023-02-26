@@ -1,15 +1,15 @@
 //* OSCURO/CLARO *//
 
-const btnSwitch = document.querySelector('#switch');
+const switchButton = document.getElementById('switch');
 
-btnSwitch.addEventListener('click', () => {
-    document.body.classList.toogle('light');
-    btnSwitch.classList.toggle('active');
+switchButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    switchButton.classList.toggle('active');
 })
 
+//* API *//
 
-
-const ids=['fullname','picture','phone','email','address',];
+const ids=['fullname','picture','phone','email','address'];
 
 const api={
     url:'https://randomuser.me/api/',
