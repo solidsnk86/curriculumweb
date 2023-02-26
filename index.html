@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">    
+
+        <title>Curriculum Web</title>
+        <link rel="stylesheet" href="/CSS/estilo.css" href="/CSS/estilo.scss">
+        <script rel="javascript" src="/JS/funciones.js" type="text/javascript" defer></script>
+
+        <!-- FONT AWSOME -->
+        <script src="http://kit.fontawsome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/x-icon" href="img/pestanas.png">
+    </head>
+    <body>
+        <!-- ENCABEZADO -->
+        <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a>CV WEB</a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#inicio">INICIO</a></li>
+                        <li><a href="#curriculum">CURRICULUM</a></li>
+                        <li><a href="#acercademi">ACERCA</a></li>
+                        <li><a href="/contacto.html">CONTACTO</a></li>
+                        <button class="darkModeSwitch ms-2" id="switch">
+                            <span><i class="fa-solid fa-moon"></i></span>
+                            <span><i class="fa-solid fa-sun"></i></span>
+                        </button>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <a href="#inicio"></a>
+        <div class="page">
+            <section id="inicio" class="inicio">
+                <div class="contenido-banner">
+                    <div class="contenedor-img">
+                        <img src="" id="picture" alt="imagen personas ramdom">
+                    </div>
+                    <h1 id="fullname"></h1>
+                    <h2>Diseñador CSS</h2>
+                    <div class="redes">
+                        <a target="_blank" href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://ar.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank"><i onclick="recarga()"; class="fa-sharp fa-solid fa-rotate"></i></a>
+                    </div>
+                    <div class="fila">
+                        <!-- DATOS PERSONAS -->
+                <div class="col">
+                <h3>Datos Personales</h3>
+                <br>
+                <ul>
+                    <ol>
+                        <strong>Fecha Nacimiento</strong>
+                         <span>26/02/1986</span>
+                     </li>
+                    <ol>
+                        <strong>Teléfono</strong>
+                        <span id="phone"></span>
+                    </ol>
+                    <ol>
+                        <strong>Email</strong>
+                        <span id="email"></span>
+                    </ol>
+                    <ol>
+                        <strong>Website</strong>
+                        <span>www.curriculum-web.net</span>
+                    </ol>
+                    <ol>
+                        <strong>Dirección</strong>ol
+                        <span id="address"></span>
+                    </ol>
+                    <ol>
+                        <strong>Cargo</strong>
+                        <span>Diseñador</span>
+                    </ol>
+                </ul>
+                </div>
+            </div>
+                </div>
+            </section>
+            <section id="sobremi" class="sobremi">
+            
+            <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería en casi Todo</h4>
+                        <br>
+                        <span class="casa">Universidad de La Punta</span>
+                        <span class="fecha">1992 - 2001</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Visual</h4>
+                        <br>
+                        <span class="casa">Universidad de La Punta</span>
+                        <span class="fecha">1995 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                    </div>
+                    <div class="item izq">
+                        <h4>Hotelería y Turismo</h4>
+                        <br>
+                        <span class="casa">Universidad de La Punta</span>
+                        <span class="fecha">1932 - 2023</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front End</h4>
+                        <br>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">1879 - 2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                    </div>
+                    <div class="item der">
+                        <h4>Back End</h4>
+                        <br>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">1905 - 1996</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                    </div>
+                    <div class="item der">
+                        <h4>Diseño CSS</h4>
+                        <br>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">1919 - 2019</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="acercademi" class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p><span>Hola, soy .....!</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a urna volutpat, laoreet est sed, mollis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent lacus leo, lobortis eu interdum quis, molestie ac risus. Vivamus tristique placerat tincidunt. Sed condimentum posuere nulla vel ultricies. Nulla libero eros, aliquam sit amet leo eget, imperdiet pulvinar risus. Donec sed blandit risus, eget sagittis sapien. Pellentesque euismod eros vitae neque porttitor pharetra. Sed egestas metus sed felis hendrerit molestie eget eget erat. Mauris ac maximus nunc. Etiam at eleifend dolor. Donec eu ipsum condimentum, tincidunt ligula finibus, consequat leo. Suspendisse in lacus vel metus iaculis finibus non sed magna. Maecenas sit amet molestie ligula. Proin eget sagittis purus. Nunc eget fermentum lectus. Mauris feugiat et elit non efficitur. Aenean quis consequat est, in semper risus. Curabitur dignissim imperdiet purus. Pellentesque hendrerit viverra ante, facilisis condimentum velit ultrices iaculis. Vivamus et libero enim. Morbi dignissim, diam ac cursus rhoncus, mi ex pulvinar lacus, ac rhoncus felis augue et ex. In hendrerit tortor sed nibh consectetur, sit amet bibendum lacus gravida. Donec quis diam ut risus iaculis suscipit nec ut risus. Etiam non nunc dolor. Maecenas interdum risus sed mauris pharetra, rutrum bibendum tellus suscipit. Sed sagittis vel ex sed rutrum. Vivamus et rhoncus arcu. Nam blandit nunc at lorem elementum lacinia. Mauris sagittis rhoncus dui nec tincidunt. Sed porttitor egestas malesuada. In velit magna, aliquet sit amet placerat et, venenatis sit amet tortor. Quisque a pretium odio. Nulla sollicitudin, massa ac cursus suscipit, felis elit bibendum mi, id pretium sem odio id arcu. Nullam laoreet facilisis sagittis. Nullam pellentesque tempor vehicula. Suspendisse potenti. Nulla at tellus leo. Integer nec vehicula erat. Nulla et purus id sem faucibus varius a at leo. Cras placerat convallis metus, et vehicula arcu rhoncus at. Curabitur fermentum ut lectus ut tempor. Donec eget dui mi. Nam eu finibus ligula. Sed accumsan massa ligula, ac bibendum ligula pulvinar feugiat. Suspendisse potenti. Quisque facilisis vel ipsum at efficitur. Etiam maximus blandit ex sit amet fringilla. Mauris rutrum rutrum justo, ac luctus velit convallis ac. Duis gravida velit lobortis nisi maximus, eget tristique lectus consectetur. Morbi volutpat velit tellus, eu mollis felis ornare quis. Nullam ac risus et quam consectetur aliquet vel id ante. Vestibulum nec neque ac orci faucibus euismod vel quis nisi. Mauris nec sagittis urna. Fusce consectetur laoreet interdum. Suspendisse porttitor convallis elit ornare consequat. Etiam quis justo quis lacus mattis maximus viverra vel massa. Aliquam sed ligula id turpis feugiat elementum. Nam cursus tempus sollicitudin. Nunc id consequat quam.
+       </p>
+   </div>
+        
+        <footer>
+            <div class="redes">
+                <a href="https://es-la.facebook.com/"><i id="fa" class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@tutosNeoTecs"><i id="yt" class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/"><i id="in" class="fa-brands fa-instagram"></i></a>
+                <div class="arriba">
+                <a href="#inicio"><i class="fa-solid fa-angles-up"></i></a>
+                </div>
+                <p>&copy;curriculumWeb - 2023</p>
+            </div>
+        </footer>
+    </body>
+</html>
