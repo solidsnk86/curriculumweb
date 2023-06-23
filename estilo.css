@@ -389,7 +389,6 @@ footer .arriba{
     nav{
         display:flex;
         width: 100%;
-        height: 50px;
         overflow-y: scroll;
     }
     .contenedor-header {
