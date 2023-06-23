@@ -172,8 +172,7 @@ h1 {
 
 /*ACERCA DE MI*/
 
-.sobremi{
-    color: #050505;
+.sobremi {
     padding: 50px 20px;
 }
 .sobremi .contenido-seccion{
@@ -185,15 +184,17 @@ h1 {
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    color: #555;
 
 }
 .sobremi .contenido-seccion p{
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
+    color: #777;
 }
-.sobremi .contenido-seccion p span{
-    color: #EE6352;
+.sobremi .contenido-seccion span{
+    color: #555;
     font-weight: bold;
 }
 .sobremi .fila{
@@ -206,6 +207,7 @@ h1 {
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
+    color: #444;
 }
 
 /* SECCION CURRICULUM */
@@ -223,6 +225,7 @@ h1 {
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    color: #666;
 }
 
 /*CONTACTO*/
