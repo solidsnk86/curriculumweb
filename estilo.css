@@ -13,7 +13,7 @@ html{
 body.dark {   
     background:  #1b1b1b; 
 }
-body.dark h2 h4 p {   
+body.dark h2, h4, p {   
     color:#fff
 }
 
