@@ -390,6 +390,12 @@ footer .arriba{
         display:flex;
         width: 100%;
     }
+    .contenedor-header {
+        width: 100%;
+    }
+    .contenedor-header .logo {
+        width: 80px;
+    }    
     .nav-responsive{
         display: block;
     }
