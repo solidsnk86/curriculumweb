@@ -24,6 +24,7 @@ body.dark h2, h4, p {
     cursor: pointer;
     outline: none;
     border: none;
+    border-raius: 50px;
     align-items: center;
     justify-content: space-between;
 }
@@ -41,6 +42,7 @@ body.dark h2, h4, p {
     background: #f8f8f8;
     width: 1.9rem;
     height: 1.9rem;
+    border-radius: 100%;
     position: absolute;
     top:0;
     left:0;
